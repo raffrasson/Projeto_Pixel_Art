@@ -64,11 +64,9 @@ function pixelSelection(evento) {
 let botaoLimpar = document.getElementById("clear-board")
 function limpa() {
     let toClear = document.getElementsByClassName("pixel")
-    toClear[toClear.length-1].style.backgroundColor = "white"
-    console.log(toClear)
+    for (let index = 0; index < toClear.length; index++) {
+        toClear[index].style.backgroundColor = "white"
+    }
 }
 
 botaoLimpar.addEventListener("click", limpa)
-
-
-
