@@ -2,6 +2,10 @@
     display: inline-block;
 }
 
+#clear-board {
+    display: block;
+}
+
 .color {
     border: 1px;
     border-color: black;
@@ -16,20 +20,36 @@
     background-color: black;
 }
 
-.pink{
+.white {
+    background-color: white;
+}
+
+.pink {
     background-color: #E04090;
 }
 
-.blue{
+.blue {
     background-color: #00AAB9;
 }
 
-.green{
+.green {
     background-color: #93E6BC;
 }
 
-.orange{
+.orange {
     background-color: #ffae00;
+}
+
+.selected {
+    
+}
+
+.unselected {
+
+}
+
+.selectedPixel {
+
 }
 
 /* Referência para a tabela: https://stackoverflow.com/questions/29229523/how-and-why-to-use-display-table-cell-css  */
