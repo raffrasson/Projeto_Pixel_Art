@@ -1,12 +1,9 @@
-# :construction: README customizado em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto no qual você pode customizar e reutilizar todas as vezes que for executar o trybe-publisher.
+# Projeto Pixel Art
 
-Para deixá-lo com a sua cara, basta alterar o seguinivo da sua máquina: ~/.student-repo-publisher/custom/_NEW_README
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+# Contexto
+Neste projeto foi desenvolvida uma página que permite a criação de imagens no estilo *pixel art* por meio do preenchimento de células em uma matriz.
+
+## Técnologias usadas
+
+Front-end:
+> Desenvolvido usando: CSS3, HTML5, Javascript ES6.
