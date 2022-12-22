@@ -1,7 +1,7 @@
 # Projeto Pixel Art
 
 # Contexto
-Neste projeto foi desenvolvida uma página que permite a criação de imagens no estilo *pixel art* por meio do preenchimento de células em uma matriz.
+Nesse projeto foi desenvolvida uma página que permite a criação de imagens no estilo *pixel art* por meio do preenchimento de células em uma matriz.
 
 ## Técnologias usadas
 
