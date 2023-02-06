@@ -3,11 +3,15 @@ body {
     flex-flow: column wrap;
     align-content:space-around;
     justify-content: space-around;
+    background-image: url("bobross.png");
+    background-position: center;
+    background-size: cover; 
 }
 
 #title {
     display: flex;
     align-self: center;
+    padding-top: 10px;
 }
 
 #clear-board {
@@ -18,11 +22,21 @@ body {
     justify-self: center;
 }
 
+#top-of-page {
+  display: flex;
+  flex-direction: column;
+  background-color:rgba(255, 255, 255, 0.7);
+  border-radius: 5px;
+  width: auto;
+}
+
 #color-palette {
     display: flex;
     align-content: center;
     justify-content: space-around;
     padding-bottom: 20px;
+    padding-top: 10px;
+    width: 400px;
 }
 
 #clear-board {
@@ -78,7 +92,11 @@ body {
 }
 
 .orange {
-    background-color: #ffae00;
+  background-color: #ffae00;
+}
+
+.red {
+  background-color: #ff0000;
 }
 
 .selected {
@@ -98,11 +116,14 @@ body {
 #box {
     display: flex;
     align-self: center;
+    padding: 10px;
 }
 
 #pixel-board {
     display: table;
     padding: 5px;
+    background-color:rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
 }
 .tr {
     display: table-row;
@@ -116,4 +137,14 @@ body {
     border: #000000 solid 1px;
     margin: 5px;
     background-color: white;
+}
+
+#bottom-of-page {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  background-color:rgba(255, 255, 255, 0.7);
+  border-radius: 5px;
+  width:fit-content;
+  padding: 10px;
 }

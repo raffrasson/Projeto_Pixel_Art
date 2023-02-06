@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[ V A P O R W A V E  P A I N T E R ]</title>
+    <title>Painter</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
+  <div id="top-of-page">
     <h1 id="title">Paleta de Cores</h1>
     <div id="color-palette">
         <div class="color black selected"></div>
         <div class="color pink unselected"></div>
         <div class="color blue unselected"></div>   
-        <div class="color green unselected"></div>       
-      
-        
+        <div class="color green unselected"></div> 
+        <div class="color orange unselected"></div> 
+        <div class="color red unselected"></div>      
     </div>
+  </div>
 
 <!-- Referência para a tabela: https://stackoverflow.com/questions/29229523/how-and-why-to-use-display-table-cell-css -->
 <div id='box'>
@@ -59,7 +61,7 @@
     </div>
 </div>
 </div>
-
+<div id="bottom-of-page">
 <div id='size'>
     <div id='boxAltura' class="mb-3">
         <label for="height" class="form-label">Altura:</label>
@@ -74,5 +76,6 @@
 <button id="clear-board">Limpar</button>  
 
     <script src="script.js"></script>
+  </div>
 </body>
 </html>
