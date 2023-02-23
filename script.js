@@ -53,11 +53,13 @@ function pixelSelection(evento) {
 }
 
 // loop para adicionar todos os quadrados em fillable:
-
-for (let index = 0; index < fillable.length; index += 1) {
-  fillable[index].addEventListener('click', pixelSelection);
+function makeFillable() {
+  for (let index = 0; index < fillable.length; index += 1) {
+    fillable[index].addEventListener('click', pixelSelection);
+  }
 }
 
+makeFillable();
 // Para limpar o quadro:
 
 const botaoLimpar = document.getElementById('clear-board');
@@ -70,9 +72,22 @@ function limpa() {
 
 botaoLimpar.addEventListener('click', limpa);
 
-let height = 5;
-const width = 5;
+const botaoCriar = document.getElementById('create-board');
+function cria() {
+  const board = document.getElementById('pixel-board');
+  const pixels = document.getElementsByClassName('tr');
+  const heightFromUser = document.getElementById('height').value;
+  const widthFromUser = document.getElementById('width').value;
+  const row = '<div class="tr"></div>';
+  const collumn = '<div class="pixel"></div>';
+  const newHeight = row.repeat(heightFromUser);
+  const newWidth = collumn.repeat(widthFromUser);
+  board.innerHTML = `${newHeight}`;
+  for (let index = 0; index < pixels.length; index += 1) {
+    pixels[index].innerHTML = newWidth;
+    console.log(pixels[index]);
+  }
+  makeFillable();
+}
 
-const boxHeight = () => {
-  height = document.getElementById('height').value;
-};
+botaoCriar.addEventListener('click', cria);

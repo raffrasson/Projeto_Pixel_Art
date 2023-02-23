@@ -14,20 +14,13 @@ body {
     padding-top: 10px;
 }
 
-#clear-board {
-    display: flex;
+#clear-board, #create-board {
+    display: block;
     width: 100px;
     font-size: large;
     align-self: center;
     justify-self: center;
-}
-
-#top-of-page {
-  display: flex;
-  flex-direction: column;
-  background-color:rgba(255, 255, 255, 0.7);
-  border-radius: 5px;
-  width: auto;
+    border-radius: 5px;
 }
 
 #color-palette {
@@ -39,9 +32,6 @@ body {
     width: 400px;
 }
 
-#clear-board {
-    display: block;
-}
 
 #size {
     display: flex;
@@ -69,6 +59,10 @@ body {
     height: 50px;
     width: 50px;
     display: inline-block;
+}
+
+.color:hover {
+  outline: thick solid #000000 
 }
 
 .black {
@@ -100,7 +94,7 @@ body {
 }
 
 .selected {
-    
+  outline: thick solid #000000;
 }
 
 .unselected {
@@ -139,7 +133,7 @@ body {
     background-color: white;
 }
 
-#bottom-of-page {
+#bottom-of-page, #top-of-page {
   align-self: center;
   display: flex;
   flex-direction: column;
